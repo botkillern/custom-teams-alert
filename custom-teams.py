@@ -82,6 +82,7 @@ def filter_msg(alert):
 
 def generate_msg(alert): 
     level = alert['rule']['level'] 
+    
     if (level <= 4): 
             color = "38F202" 
     elif (level >= 5 and level <= 7): 
@@ -110,12 +111,12 @@ def generate_msg(alert):
             'value': alert['agentless']['host'] 
         })
         
-    if 'data' in alert: 
+    if alert['agent']['id'] == 5712:
         facts.append({ 
             'name': 'Usuario', 
             'value': alert['data']['dstuser'] 
         })
-
+        
     facts.append({ 
         'name': 'Location', 
         'value': alert['location'] 
