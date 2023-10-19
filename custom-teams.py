@@ -108,7 +108,13 @@ def generate_msg(alert):
         facts.append({ 
             'name': 'Agentless host', 
             'value': alert['agentless']['host'] 
-        }) 
+        })
+        
+    if 'data' in alert: 
+        facts.append({ 
+            'name': 'Usuario', 
+            'value': alert['data']['dstuser'] 
+        })
 
     facts.append({ 
         'name': 'Location', 
