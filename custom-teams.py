@@ -17,7 +17,7 @@ except Exception as e:
 
 # ADD THIS TO ossec.conf configuration: 
 #  <integration> 
-#      <name>custom-shuffle</name> 
+#      <name>custom-teams</name> 
 #      <hook_url>http://<TEAMS_INCOMING_WEBHOOCK_URL></hook_url> 
 #      <level>3</level> 
 #      <alert_format>json</alert_format> 
