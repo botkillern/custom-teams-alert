@@ -18,7 +18,7 @@ except Exception as e:
 # ADD THIS TO ossec.conf configuration: 
 #  <integration> 
 #      <name>custom-shuffle</name> 
-#      <hook_url>http://<IP>:3001/api/v1/hooks/<HOOK_ID></hook_url> 
+#      <hook_url>http://<TEAMS_INCOMING_WEBHOOCK_URL></hook_url> 
 #      <level>3</level> 
 #      <alert_format>json</alert_format> 
 #  </integration> 
